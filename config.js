@@ -12,6 +12,16 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+  bundles: {
+    "build.js": [
+      "index.js",
+      "src/hello-es6.js",
+      "npm:jquery@3.3.1.js",
+      "npm:jquery@3.3.1/dist/jquery.js",
+      "src/hello-commonjs.js",
+      "src/hello-amd.js"
+    ]
+  },
 
   map: {
     "babel": "npm:babel-core@5.8.38",
