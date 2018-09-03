@@ -1,17 +1,14 @@
 <html>
 <head>
-    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script src="./jspm_packages/system.js"></script>
+    <script src="./config.js"></script>
     <script>
-        SystemJS.import('./hello-amd.js').then(function (hello) {
-            hello('main1')
-        })
-        SystemJS.import('./hello-commonjs.js').then(function (hello) {
-            hello('main2')
-        })
+        SystemJS.import('index')
     </script>
 </head>
 <body>
 <div id="main1"></div>
 <div id="main2"></div>
+<div id="main3"></div>
 </body>
 </html>
