@@ -1,21 +1,21 @@
 {
-  "scripts": {
-    "jspm-install": "jspm install",
-    "demo": "http-server . -c-1 -o"
-  },
-  "devDependencies": {
-    "http-server": "^0.11.1",
-    "jspm": "^0.16.53"
-  },
-  "jspm": {
-    "main": "index.js",
-    "dependencies": {
-      "jquery": "npm:jquery@^3.3.1"
+    "scripts": {
+        "jspm-install": "jspm install",
+        "start": "http-server . -c-1 -o"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+        "http-server": "^0.11.1",
+        "jspm": "^0.16.53"
+    },
+    "jspm": {
+        "main": "index.js",
+        "dependencies": {
+            "jquery": "npm:jquery@^3.3.1"
+        },
+        "devDependencies": {
+            "babel": "npm:babel-core@^5.8.24",
+            "babel-runtime": "npm:babel-runtime@^5.8.24",
+            "core-js": "npm:core-js@^1.1.4"
+        }
     }
-  }
 }
